@@ -10,7 +10,7 @@ body {
     height: 100vh;
 }
 
-
+/* Style du formulaire */
 #ideaForm {
     background-color: white;
     padding: 20px;
@@ -18,6 +18,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 600px;
     max-width: 100%;
+    margin-bottom: 20px;
 }
 
 /* Style des titres */
@@ -67,6 +68,11 @@ button:hover {
 #messageContainer {
     margin-top: 15px;
     text-align: center;
+    color: green; /* Couleur par défaut pour les messages */
+}
+
+#messageContainer.error {
+    color: red; /* Couleur pour les messages d'erreur */
 }
 
 /* Style de la table des idées */
@@ -102,11 +108,7 @@ tbody td {
     color: white;
 }
 
-.actions .disapprove {
+.actions .delete {
     background-color: #f44336;
     color: white;
 }
-
-.actions .delete {
-    background-color: #ccc;
-    color:red;}
