@@ -19,27 +19,6 @@ document.getElementById('ideaForm').addEventListener('submit', function(event) {
         return;
     }
 
-
-// Limiter le nombre de mots au début et à la fin pour le libelle
-const libelleWords = libelle.split(/\s+/);
-if (libelleWords.length < 5 || libelleWords.slice(-10).length < 10) {
-    displayMessage('Le libellé doit contenir au moins 10 mots au début et à la fin.', true);
-    return;
-}
-
-// Limiter le nombre de mots au début et à la fin pour le message
-const messageWords = message.split(/\s+/);
-if (messageWords.length < 10 || messageWords.slice(-100).length < 50) {
-    displayMessage('Le message doit contenir au moins 50 mots au début et à la fin.', true);
-    return;
-}
-
-
-
-
-
-
-
     // Ajouter l'idée au tableau des idées
     addIdea(libelle, categorie, message);
     resetForm(); // Réinitialiser le formulaire
