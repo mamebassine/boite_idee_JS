@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boîte à Idées</title>
+    <!-- Lien vers le fichier CSS pour le style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Boîte à Idées</h1>
+        <!-- Formulaire pour soumettre de nouvelles idées -->
+        <form id="ideaForm">
+            <div class="form-group">
+                <label for="libelle">Libellé:</label>
+                <input type="text" id="libelle" required>
+            </div>
+            <div class="form-group">
+                <label for="categorie">Catégorie:</label>
+                <select id="categorie" required>
+                   <option value="">Sélectionnez une catégorie</option>
+                    <option value="politique">Politique</option>
+                    <option value="sport">Sport</option>
+                    <option value="santé">Santé</option>
+                    <option value="éducation">Éducation</option>
+					<option value="environerement">Environerement</option>
+                    <option value="culture">Culture</option>
+                    <option value="economie">Economie</option>
+                    <option value="informatique">Informatique</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message Descriptif:</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit">Soumettre</button>
+        </form>
+        
+	</body>
+</html>
+
+
+
+
+

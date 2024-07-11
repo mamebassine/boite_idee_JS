@@ -1,0 +1,64 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#ideaForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 100%;
+}
+
+/* Style des titres */
+h1, h2 {
+    text-align: center;
+    color: #343F69;
+}
+
+/* Style des groupes de formulaire */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style des étiquettes */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style des champs de saisie, des sélecteurs et des zones de texte */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style du bouton de soumission */
+button {
+    background-color: #343F69;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2c365a;
+}
